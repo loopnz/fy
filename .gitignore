@@ -1,0 +1,12 @@
+!.babelrc
+!.editorconfig
+!.gitignore
+!.postcssrc.js
+*/.DS_Store
+node_modules/
+NXTicket/
+NXTicket.zip
+dist/
+npm-debug.log
+yarn-error.log
+.svn/

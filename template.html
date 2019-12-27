@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>翻译官</title>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <link rel="stylesheet" href="../css/template.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-logo"></div>
+        <ul class="header-nav">
+          <li>
+            <a href="">翻译</a>
+          </li>
+          <li>
+            <a href="">APP</a>
+          </li>
+          <li>
+            <a href="">熊美丽</a>
+          </li>
+          <li>
+            <a href="">关于</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a href="">首页</a></li>
+        <li class="<%if(to==='en'){%>selected <%}%> nav-item">
+          <a href="">英语</a>
+        </li>
+        <li class="nav-item"><a href="">日语</a></li>
+        <li class="nav-item"><a href="">韩语</a></li>
+        <li class="nav-item"><a href="">法语</a></li>
+        <li class="nav-item"><a href="">阿拉伯语</a></li>
+        <li class="nav-item"><a href="">泰语</a></li>
+        <li class="nav-item"><a href="">印尼语</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="side">
+        <div class="side-title">热门推荐</div>
+        <div class="side-img"></div>
+        <ul class="side-ul">
+          <%recommend.forEach(function(item){%>
+          <li class="side-li">
+            <div class="side-liIcon"></div>
+            <a href="<%=item.link%>"><%=item.title%></a>
+          </li>
+          <%})%>
+        </ul>
+        <div class="qrcode">
+          <div class="qrcode-img"></div>
+          <div class="qrcode-txt">出国翻译官</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="tags">
+          <span>出国翻译官</span>
+          <span class="right">></span>
+          <span>常用</span>
+        </div>
+        <div class="title">
+          <h3><%=title%></h3>
+        </div>
+        <div class="source">
+          <span>来源:出国翻译官</span>
+          <span class="time"> <%=transTime%> </span>
+        </div>
+        <div class=" text">
+          <div class="src"><%=src%></div>
+          <div class="dst"><%=content%></div>
+        </div>
+        <div class="ad">
+          <div class="cTitle">
+            <span>您可能关注的内容</span>
+            <span class="tip">广告</span>
+          </div>
+          <div class="ad-content">
+            <div class="ad-img">
+              <div class="ad-imgTitle">日语翻译培训班</div>
+              <ul class="ad-imgList">
+                <li><img src="" alt="" /></li>
+                <li><img src="" alt="" /></li>
+                <li><img src="" alt="" /></li>
+              </ul>
+            </div>
+            <div class="ad-txt">
+              <div class="ad-txt-1">语言学校22</div>
+              <div class="ad-txt-2">介绍文字在这里</div>
+              <div class="ad-txt-3">www.isi-edu.com</div>
+            </div>
+            <div class="ad-txt">
+              <div class="ad-txt-1">语言学校22</div>
+              <div class="ad-txt-2">介绍文字在这里</div>
+              <div class="ad-txt-3">www.isi-edu.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="cTitle">其他类似的问题</div>
+          <ul class="question-ul">
+            <li class="question-li">
+              <div>日语你好怎么说?</div>
+              <div class="question-date">2011-06-15</div>
+            </li>
+            <li class="question-li">
+              <div>日语你好怎么说?</div>
+              <div class="question-date">2011-06-15</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
